@@ -7,27 +7,17 @@ prdkFunctions.isWebP();
 
 'use strict'
 
-function createLid (country) {
-    return function lid (name) {
-        console.log(`${name} - ${country}`)
-    }
+const userInfo = {
+    name: "Vasa",
+    age: 30
 }
 
-let ukr = createLid('Ukraine');
-ukr('Petro');
-ukr('Vasiliy');
+userInfo.name = "Lena";
 
-console.log(' ')
+console.log(userInfo)
 
-let pl = createLid('Poland');
-pl('Robert');
-pl('Tomek');
+delete userInfo.name;
 
-console.log(' ')
-
-let bl = createLid('Belarus');
-bl('Andriy');
-bl('Sergey');
-
+console.log(userInfo);
 
 
