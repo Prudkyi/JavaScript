@@ -7,8 +7,11 @@ prdkFunctions.isWebP();
 
 'use strict'
 
-let myElement = document.body;
+let list = document.querySelectorAll(".mylist");
+let myLi = list[0].querySelectorAll('li')
 
-console.log(myElement.firstElementChild);
-console.log(myElement.lastElementChild)
+for (let element of myLi){
+    console.log(element)
+}
+
 
