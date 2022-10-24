@@ -4,11 +4,29 @@
     @@include('html/head.html',{
     "title":"Lessons JS"
     })
+    <style>
+        .mylist li {
+            padding-left: 30px;
+            font-size: 20px;
+        }
+    </style>
 </head>
 <body>
 @@include('html/header.html',{})
 <div id="main">
-
+        <div class="mylist" id="basic">
+            <ul data-doc>
+                <li class="firstLi">el 1.0</li>
+                <li class="firstLi">el 2.0
+                    <ul class="thueUl">
+                        <li class="thueUl__li">el 2.1</li>
+                        <li class="thueUl__li">el 2.2</li>
+                        <li class="thueUl__li">el 2.3</li>
+                    </ul>
+                </li>
+                <li class="firstLi">el 3.0</li>
+            </ul>
+        </div>
 </div>
 <footer>
     @@include('html/footer.html',{})
