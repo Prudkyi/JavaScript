@@ -5,18 +5,27 @@ prdkFunctions.isWebP();
 
 /* go Work */
 
-'use strict'
 
-let myText = document.querySelector(".text");
 
-let content = myText.innerHTML;
+let blocks = document.querySelectorAll(".wrapBlock button");
 
-console.log(content)
 
-myText.innerHTML = `${content} New text`;
 
-let content2 = myText.innerHTML;
-console.log(content2);
+for (let el of blocks) {
+    el.addEventListener('click', function (event) {
+        for (let allEl of blocks) {
+            allEl.closest('.block').classList.remove('blockRed');
+        }
+        el.closest('.block').classList.add('blockRed');
+    })
+}
+
+
+
+
+
+
+
 
 
 

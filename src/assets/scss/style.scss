@@ -15,3 +15,24 @@ input  {
   border: 1px solid #cccccc;
   padding: 7px 12px;
 }
+.wrapBlock {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 30px;
+}
+.block {
+  width: 200px;
+  height: 200px;
+  background-color: grey;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  button {
+    padding: 10px;
+    background-color: #ffffff;
+    font-size: 20px;
+  }
+}
+.blockRed {
+  background-color: #ff2626;
+}
