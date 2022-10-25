@@ -14,18 +14,33 @@
 <body>
 @@include('html/header.html',{})
 <div id="main">
+        <div class="text">
+            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Asperiores, ex.</p>
+            <br>
+        </div>
         <div class="mylist" id="basic">
-            <ul data-doc>
+            <ul data-doc="ok">
                 <li class="firstLi">el 1.0</li>
                 <li class="firstLi">el 2.0
-                    <ul class="thueUl">
-                        <li class="thueUl__li">el 2.1</li>
-                        <li class="thueUl__li">el 2.2</li>
-                        <li class="thueUl__li">el 2.3</li>
+                    <ul>
+                        <li class="" style="color: red">el 2.1</li>
+                        <li class="">el 2.2</li>
+                        <li class="">el 2.3
+                            <ul class="thueUl">
+                                <li class="thueUl__li">el 2.3.1</li>
+                                <li class="thueUl__li">el 2.3.2</li>
+                                <li class="thueUl__li">el 2.3.3</li>
+                            </ul>
+                        </li>
                     </ul>
                 </li>
                 <li class="firstLi">el 3.0</li>
             </ul>
+            <form action="">
+                <input type="text" name="nameUser" placeholder="Name">
+                <input type="email" name="emailUser" placeholder="Email">
+                <input type="tel" name="telUser" placeholder="Phone">
+            </form>
         </div>
 </div>
 <footer>

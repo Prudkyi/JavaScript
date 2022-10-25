@@ -4,3 +4,14 @@
 //@import "fonts";
 @import "libre/grid";
 @import "libre/main_libre";
+
+#main {
+  padding: 10px 30px;
+}
+input  {
+  display: block;
+  font-size: 17px;
+  margin-top: 15px;
+  border: 1px solid #cccccc;
+  padding: 7px 12px;
+}

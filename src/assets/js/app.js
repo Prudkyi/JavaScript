@@ -7,11 +7,20 @@ prdkFunctions.isWebP();
 
 'use strict'
 
-let list = document.querySelectorAll(".mylist");
-let myLi = list[0].querySelectorAll('li')
+let myText = document.querySelector(".text");
 
-for (let element of myLi){
-    console.log(element)
-}
+let content = myText.innerHTML;
+
+console.log(content)
+
+myText.innerHTML = `${content} New text`;
+
+let content2 = myText.innerHTML;
+console.log(content2);
+
+
+
+
+
 
 
