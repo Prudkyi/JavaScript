@@ -5,29 +5,15 @@ prdkFunctions.isWebP();
 
 /* go Work */
 
+let main__text = document.querySelector('.main__text');
+let h1 = document.querySelector('#main h1');
+
+const dubleH1 = h1.cloneNode(true);
+
+main__text.append(dubleH1)
 
 
-let blocks = document.querySelectorAll(".wrapBlock button");
-
-
-
-for (let el of blocks) {
-    el.addEventListener('click', function (event) {
-        for (let allEl of blocks) {
-            allEl.closest('.block').classList.remove('blockRed');
-        }
-        el.closest('.block').classList.add('blockRed');
-
-        if ( el.closest('.block').matches('.winBlock') ) {
-            console.log('це виграшний блок')
-        }
-        else {
-            console.log('це програний блок')
-        }
-
-    })
-}
-
+console.log(getComputedStyle(h1).fontSize)
 
 
 
