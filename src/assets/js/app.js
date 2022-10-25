@@ -17,6 +17,14 @@ for (let el of blocks) {
             allEl.closest('.block').classList.remove('blockRed');
         }
         el.closest('.block').classList.add('blockRed');
+
+        if ( el.closest('.block').matches('.winBlock') ) {
+            console.log('це виграшний блок')
+        }
+        else {
+            console.log('це програний блок')
+        }
+
     })
 }
 
