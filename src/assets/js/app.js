@@ -4,14 +4,12 @@ import * as prdkFunctions from "./modules/functions.js";
 prdkFunctions.isWebP();
 
 /* go Work */
+let mainBlock = document.getElementById("main");
 
 
+console.log(mainBlock.getBoundingClientRect().top)
 
-let item = document.querySelector('.lesson');
 
-const itemCord = item.getBoundingClientRect();
-
-console.log(itemCord.width);
 
 
 
