@@ -5,10 +5,16 @@ prdkFunctions.isWebP();
 
 /* go Work */
 
-let list = document.querySelector('ul');
-let myLi = list.lastElementChild.innerHTML;
 
-console.log(myLi)
+
+let testBtn = document.getElementById("test");
+
+
+let lesson = document.querySelector('.lesson__block').clientWidth;
+
+console.log(lesson)
+
+
 
 
 
