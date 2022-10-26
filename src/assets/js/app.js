@@ -7,12 +7,11 @@ prdkFunctions.isWebP();
 
 
 
-let testBtn = document.getElementById("test");
+let item = document.querySelector('.lesson');
 
+const itemCord = item.getBoundingClientRect();
 
-let lesson = document.querySelector('.lesson__block').clientWidth;
-
-console.log(lesson)
+console.log(itemCord.width);
 
 
 
