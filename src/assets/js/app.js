@@ -7,7 +7,10 @@ prdkFunctions.isWebP();
 let mainBlock = document.getElementById("main");
 
 
-console.log(mainBlock.getBoundingClientRect().top)
+console.log(mainBlock.getBoundingClientRect().top);
+
+console.log(prdkFunctions.sizeWindow())
+
 
 
 
