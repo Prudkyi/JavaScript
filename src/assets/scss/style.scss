@@ -6,11 +6,44 @@
 @import "libre/main_libre";
 body {
   min-height: 2000px;
-  background-color: #111111;
+  font-family: 'Assistant', sans-serif;
 }
 #main {
+  width: 100%;
+  min-height: 100vh;
+  position: relative;
+  padding: 30px;
   p {
-    color: #ffffff;
+    font-size: 20px;
+    line-height: 150%;
+    margin-top: 20px;
   }
-
+  .contextMenu {
+    background-color: rgba(0, 0, 0, 0.8);
+    display: none;
+    position: absolute;
+    color: #ffffff;
+    font-size: 17px;
+    border-radius: 3px;
+    li {
+      cursor: pointer;
+      padding: 12px 35px 12px 15px;
+      border-bottom: 1px solid #777;
+      transition: all 0.2s;
+      &:last-child {
+        border: none
+      }
+      &:hover {
+        opacity: 0.9;
+      }
+    }
+  }
 }
+
+
+  .redColor {
+    color: red
+  }
+  .greenColor {
+    color: green;
+  }
