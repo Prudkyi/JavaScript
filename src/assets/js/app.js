@@ -63,10 +63,10 @@ function removeBorder (event) {
     document.getElementById(idElement).classList.remove("yellowBorder");
 }
 
-mainBlock.addEventListener("contextmenu", clickMain, setBorder);
+mainBlock.addEventListener("contextmenu", clickMain);
 mainBlock.addEventListener("contextmenu", setBorder);
 contextMenu.addEventListener('click', menuEvent);
-document.addEventListener("click", closeContextMenu)
+document.addEventListener("click", closeContextMenu);
 
 
 
