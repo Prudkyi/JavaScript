@@ -7,7 +7,6 @@ prdkFunctions.isWebP();
 const mainBlock = document.getElementById("main"),
     contextMenu = document.getElementById("contextMenu");
 
-
 function clickMain (event) {
     event.preventDefault();
     let positionX = event.clientX + 10,
@@ -19,19 +18,18 @@ function clickMain (event) {
 
     let idElement = "";
     idElement = event.target.id;
+
     function menuEvent (event) {
+        /* ----> !!! Here the event executes all previous clicks */
+        console.log(idElement)
 
-        console.log(event.target.closest("li").classList)
-
-        event.target.classList.forEach(thisClass => {
+        event.target.closest("li").classList.forEach(thisClass => {
 
             if (thisClass === "contextMenu__redColor") {
-                setColor(idElement, "red");
-                return;
+                console.log("red")
             }
             if (thisClass === "contextMenu__greenColor") {
-                setColor(idElement, "green");
-
+                console.log("green")
             }
         })
     }
@@ -39,6 +37,8 @@ function clickMain (event) {
     contextMenu.addEventListener('click', menuEvent);
 
 }
+
+mainBlock.addEventListener("contextmenu", clickMain);
 
 function closeContextMenu (event) {
     contextMenu.style.display = "none";
@@ -58,8 +58,8 @@ function setColor (element, color) {
 
 }
 
-mainBlock.addEventListener("contextmenu", clickMain);
-document.addEventListener("click", closeContextMenu)
+
+document.addEventListener("click", closeContextMenu, {capture: true})
 
 
 
