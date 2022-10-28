@@ -6,19 +6,23 @@ header {
   justify-content: center;
   align-items: center;
   box-shadow: 0 1px 3px 0 rgb(0, 0, 0);
-  z-index: 10;
+  position: relative;
+  z-index: 9999;
 }
 .header {
-  height: $sizeHeaderMenu;
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
   width: $size-main;
   position: relative;
+  z-index: 9999;
+  &__wrap {
+    height: $sizeHeaderMenu;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    outline: 1px solid red;
+  }
 }
 .mainLogo {
   height: $sizeHeaderMenu;
-  position: relative;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -27,8 +31,6 @@ header {
   }
 }
 .nav {
-  position: relative;
-  z-index: 10;
   ul {
     height: $sizeHeaderMenu;
     display: flex;
@@ -44,33 +46,36 @@ header {
 
     }
   }
-  &__searchForm {
-    z-index: 1;
-    form {
-      background-color: green;
-      position: absolute;
+}
+.searchForm {
+  position: absolute;
+  z-index: 1;
+  right: 0;
+  width: 100%;
+  form {
+    background-color: green;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    padding: 15px;
+    border-radius: 0 0 5px 5px;
+    box-shadow: 0 1px 3px 0 rgb(0, 0, 0);
+    input {
+      background-color: #fff;
+      margin: 0;
       width: 100%;
-      display: flex;
-      align-items: center;
-      right: 0;
-      top: $sizeHeaderMenu;
-      padding: 15px;
-      border-radius: 0 0 5px 5px;
-      box-shadow: 0 1px 3px 0 rgb(0, 0, 0);
-      input {
-        background-color: #fff;
-        margin: 0;
-        width: 100%;
-        display: block;
-        height: 40px;
-      }
-      button {
-        display: block;
-        background-color: grey;
-        margin: 0;
-        width: 100px;
-        height: 40px;
-      }
+      display: block;
+      height: 40px;
     }
+    button {
+      display: block;
+      background-color: grey;
+      margin: 0;
+      width: 100px;
+      height: 40px;
+    }
+  }
+  &-active {
+    top: 60px;
   }
 }
