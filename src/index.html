@@ -14,7 +14,27 @@
 <body>
 @@include('html/header.html',{})
 <div id="main">
-
+<header>
+    <div class="header">
+        <div class="mainLogo"><img src="assets/img/github_logo.png" alt=""></div>
+        <nav class="nav">
+            <ul>
+                <li>Пункт 1</li>
+                <li>Пункт 2</li>
+                <li>Пункт 3</li>
+                <li>Пункт 4</li>
+                <li>Пункт 5</li>
+                <li class="nav__search"><i class="fa-solid fa-magnifying-glass"></i></li>
+            </ul>
+        </nav>
+        <div class="nav__searchForm">
+            <form action="">
+                <input type="text" placeholder="Пошуковий запит">
+                <button type="button">Пошук</button>
+            </form>
+        </div>
+    </div>
+</header>
     <div id="contextMenu" class="contextMenu">
         <ul>
             <li class="contextMenu__redColor">Червоний</li>
@@ -23,8 +43,10 @@
         </ul>
     </div>
 
-    <div><p id="block1">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Enim, ullam?</p></div>
-    <div><p id="block2">Lorem ipsum dolor sit amet.</p></div>
+    <section>
+        <div><p id="block1">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Enim, ullam?</p></div>
+        <div><p id="block2">Lorem ipsum dolor sit amet.</p></div>
+    </section>
 
 </div>
 <footer>
