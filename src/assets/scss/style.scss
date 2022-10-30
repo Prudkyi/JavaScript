@@ -4,49 +4,14 @@
 //@import "fonts";
 @import "libre/grid";
 @import "libre/main_libre";
+
+@import "navigation";
+
 body {
-  min-height: 2000px;
   font-family: 'Assistant', sans-serif;
+  overflow-x: hidden;
 }
 #main {
-  width: 100%;
-  min-height: 100vh;
-  position: relative;
-  padding: 30px;
-  p {
-    font-size: 20px;
-    line-height: 150%;
-    margin-top: 20px;
-  }
-  .contextMenu {
-    background-color: rgba(0, 0, 0, 0.8);
-    display: none;
-    position: absolute;
-    color: #ffffff;
-    font-size: 17px;
-    border-radius: 3px;
-    li {
-      cursor: pointer;
-      padding: 12px 35px 12px 15px;
-      border-bottom: 1px solid #777;
-      transition: all 0.2s;
-      &:last-child {
-        border: none
-      }
-      &:hover {
-        opacity: 0.9;
-      }
-    }
-  }
+  max-width: 100%;
+  padding: $size-main-padding-lr;
 }
-
-
-  .redColor {
-    color: red
-  }
-  .greenColor {
-    color: green;
-  }
-  .yellowBorder {
-    outline: 2px solid yellow;
-  }
