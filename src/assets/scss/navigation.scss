@@ -4,6 +4,7 @@
 header {
   background-color: $color-bg-main;
   color: $color-font-main;
+  box-shadow: $shadow-md;
 }
 
 .header {
@@ -66,7 +67,6 @@ header {
     }
   }
 }
-
 .navMob {
   position: absolute;
   top: 0;
