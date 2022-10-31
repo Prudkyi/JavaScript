@@ -5,68 +5,45 @@ prdkFunctions.isWebP();
 
 /* go Work */
 
-const mainBlock = document.getElementById("main"),
-    contextMenu = document.getElementById("contextMenu");
-let idElement = "";
 
-function clickMain (event) {
-    event.preventDefault();
-    let positionX = event.clientX + 10,
-        positionY = event.clientY + 10;
+/* mob Menu */
+let stateOpenMobMenu = false;
 
-    contextMenu.style.top = `${positionY}px`;
-    contextMenu.style.left = `${positionX}px`;
-    contextMenu.style.display = "inline-block";
+const btnOpen = document.querySelector(".header__mobicon i"),
+    navMob__wrap = document.querySelector(".navMob__wrap"),
+    navMob__wallpaper = document.querySelector(".navMob__wallpaper"),
+    navMob = document.querySelector(".navMob"),
+    navMob__close = document.querySelector(".navMob__close"),
+    mainContent = document.getElementById("main"),
+    speedOpenMobNav = 400;
 
-    idElement = event.target.id;
+
+function openNavMob (element) {
+    navMob.classList.add("navMob-active");
+    navMob__wrap.classList.add("navMenu__active__wrap");
+    navMob__wallpaper.classList.add("navMob__wallpaper__active");
+    mainContent.classList.add("navMenu__main__active");
+    stateOpenMobMenu = true;
 }
 
-function closeContextMenu (event) {
-    contextMenu.style.display = "none";
-    removeBorder();
-}
-function menuEvent (event) {
-
-    event.target.closest("li").classList.forEach(thisClass => {
-
-        if (thisClass === "contextMenu__redColor") {
-            setColor(idElement, "red");
-        }
-        else if (thisClass === "contextMenu__greenColor") {
-            setColor(idElement, "green");
-        }
-        else {
-            setColor(idElement, "default");
-        }
-    })
-}
-function setColor (element, color) {
-    let el = document.getElementById(element);
-    el.classList = "";
-    switch (color) {
-        case 'red':
-            el.classList = "redColor";
-            break;
-        case 'green':
-            el.classList = "greenColor";
-            break;
-        case 'default':
-            el.classList = "";
-            break;
-    }
-
-}
-function setBorder (event) {
-    document.getElementById(idElement).classList.add("yellowBorder");
-}
-function removeBorder (event) {
-    document.getElementById(idElement).classList.remove("yellowBorder");
+function closeNavMob (element) {
+    navMob__wrap.classList.remove("navMenu__active__wrap");
+    navMob__wallpaper.classList.remove("navMob__wallpaper__active");
+    mainContent.classList.remove("navMenu__main__active");
+    setTimeout(function (){navMob.classList.remove("navMob-active")}, speedOpenMobNav);
+    stateOpenMobMenu = false;
 }
 
-mainBlock.addEventListener("contextmenu", clickMain);
-mainBlock.addEventListener("contextmenu", setBorder);
-contextMenu.addEventListener('click', menuEvent);
-document.addEventListener("click", closeContextMenu);
+btnOpen.addEventListener("click", function (){
+    if (!stateOpenMobMenu) openNavMob();
+    else closeNavMob();
+});
+
+navMob__close.addEventListener("click", closeNavMob);
+navMob__wallpaper.addEventListener("click", closeNavMob);
+
+
+
 
 
 

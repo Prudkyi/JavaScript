@@ -1,0 +1,157 @@
+@import "virable/main_var";
+@import "libre/grid";
+
+header {
+  background-color: $color-bg-main;
+  color: $color-font-main;
+}
+
+.header {
+  max-width: $size-main;
+  margin: 0 auto;
+  color: $color-bg-thue;
+  padding: 0 $size-main-padding-lr;
+
+  &__wrap {
+    display: flex;
+    justify-content: space-between;
+  }
+
+  &__logo {
+    height: $size-height-menu;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    img {
+      height: 80%;
+    }
+  }
+
+  &__nav {
+    @include _sm {
+      display: none;
+    }
+
+    nav {
+      ul {
+        display: flex;
+        align-items: center;
+        height: $size-height-menu;
+
+        li {
+          margin: 0 10px;
+
+          a {
+            font-size: 17px;
+            font-weight: 600;
+            color: $color-bg-thue;
+          }
+        }
+      }
+    }
+  }
+
+  &__mobicon {
+    display: none;
+    justify-content: center;
+    align-items: center;
+    @include _sm() {
+      display: flex;
+    }
+
+    i {
+      cursor: pointer;
+      font-size: 34px;
+    }
+  }
+}
+
+.navMob {
+  position: absolute;
+  top: 0;
+  left: 200%; // slide left -100%, slide right 200%
+  width: 100%;
+  min-height: 100%;
+  display: block;
+  z-index: 9999;
+  &-active {
+    left: 0;
+  }
+  &__wallpaper {
+    position: absolute;
+    width: 100%;
+    min-height: 100%;
+    z-index: 9998;
+    background-color: rgba(0, 0, 0, 0.7);
+    display: none;
+    opacity: 0;
+  }
+  &__wrap {
+    position: absolute;
+    z-index: 9999;
+    top: 0;
+    justify-content: space-between;
+    width: 70%;
+    min-height: 100vh;
+    display: flex;
+    transition: all $speed-open-menu;
+    padding: 0 $size-main-padding-lr;
+    background-color: $color-bg-mob-menu;
+  }
+  &__list {
+    padding: 25px 0 0 0;
+
+    li {
+      margin-bottom: 10px;
+
+      a {
+        font-size: 17px;
+        font-weight: 600;
+        color: $color-bg-thue;
+      }
+    }
+  }
+  &__close {
+    padding: 23px 0 0 0;
+
+    i {
+      color: $color-bg-thue;
+      cursor: pointer;
+      font-size: 34px;
+    }
+  }
+}
+.wrapPosition-left {
+  .navMob__wrap {
+    left: -100%;
+  }
+  .navMenu__active__wrap {
+    left: 0;
+  }
+  .navMob__wallpaper__active {
+    display: block;
+    opacity: 1;
+  }
+}
+.wrapPosition-right {
+  .navMob__wrap {
+    right: -100%;
+  }
+  .navMenu__active__wrap {
+    right: 0;
+  }
+  .navMob__wallpaper__active {
+    display: block;
+    opacity: 1;
+  }
+}
+.navMenu__main__active {
+  overflow: hidden;
+  height: 100%;
+  position: fixed;
+  z-index: 999;
+}
+.mob__menu__active {
+  display: block;
+}
