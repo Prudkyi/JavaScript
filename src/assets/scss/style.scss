@@ -6,16 +6,15 @@
 @import "libre/main_libre";
 
 @import "navigation";
+@import "header";
 
 body {
-  min-height: 2000px;
   overflow-x: hidden;
+  position: relative;
   font-family: 'Assistant', sans-serif;
 }
 #main {
   width: 100%;
-  min-height: 100vh;
-  position: relative;
   padding: 30px;
   p {
     font-size: 20px;

@@ -22,14 +22,14 @@ function openNavMob (element) {
     navMob.classList.add("navMob-active");
     navMob__wrap.classList.add("navMenu__active__wrap");
     navMob__wallpaper.classList.add("navMob__wallpaper__active");
-    mainContent.classList.add("navMenu__main__active");
+    document.body.classList.add("navMenu__main__active");
     stateOpenMobMenu = true;
 }
 
 function closeNavMob (element) {
     navMob__wrap.classList.remove("navMenu__active__wrap");
     navMob__wallpaper.classList.remove("navMob__wallpaper__active");
-    mainContent.classList.remove("navMenu__main__active");
+    document.body.classList.remove("navMenu__main__active");
     setTimeout(function (){navMob.classList.remove("navMob-active")}, speedOpenMobNav);
     stateOpenMobMenu = false;
 }

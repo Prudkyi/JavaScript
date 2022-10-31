@@ -1,81 +1,20 @@
-$sizeHeaderMenu: 80px;
+@import "virable/main_var";
+@import "libre/grid";
 
-header {
-  background-color: $bg-main;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  box-shadow: 0 1px 3px 0 rgb(0, 0, 0);
-  position: relative;
-  z-index: 9999;
-}
-.header {
-  width: $size-main;
-  position: relative;
-  z-index: 9999;
+$topBlock-bg: #111111;
+$topBlock-color: #ffffff;
+$topBlock-height: 60px;
+
+.topBlock {
+  background-color: $topBlock-bg;
+
   &__wrap {
-    height: $sizeHeaderMenu;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    outline: 1px solid red;
-  }
-}
-.mainLogo {
-  height: $sizeHeaderMenu;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  img {
-    height: 80%;
-  }
-}
-.nav {
-  ul {
-    height: $sizeHeaderMenu;
+    max-width: $size-main;
+    margin: 0 auto;
+    color: $topBlock-color;
+    min-height: $topBlock-height;
     display: flex;
     align-items: center;
-    justify-content: center;
-    li {
-      background-color: #fff;
-      position: relative;
-    }
-  }
-  &__search {
-    i {
-
-    }
-  }
-}
-.searchForm {
-  position: absolute;
-  z-index: 1;
-  right: 0;
-  width: 100%;
-  form {
-    background-color: green;
-    width: 100%;
-    display: flex;
-    align-items: center;
-    padding: 15px;
-    border-radius: 0 0 5px 5px;
-    box-shadow: 0 1px 3px 0 rgb(0, 0, 0);
-    input {
-      background-color: #fff;
-      margin: 0;
-      width: 100%;
-      display: block;
-      height: 40px;
-    }
-    button {
-      display: block;
-      background-color: grey;
-      margin: 0;
-      width: 100px;
-      height: 40px;
-    }
-  }
-  &-active {
-    top: 60px;
+    padding: 0 $size-main-padding-lr;
   }
 }

@@ -5,14 +5,13 @@ header {
   background-color: $color-bg-main;
   color: $color-font-main;
   box-shadow: $shadow-md;
+  z-index: 9998;
 }
-
 .header {
   max-width: $size-main;
   margin: 0 auto;
   color: $color-bg-thue;
   padding: 0 $size-main-padding-lr;
-
   &__wrap {
     display: flex;
     justify-content: space-between;
@@ -68,7 +67,7 @@ header {
   }
 }
 .navMob {
-  position: absolute;
+  position: fixed;
   top: 0;
   left: 200%; // slide left -100%, slide right 200%
   width: 100%;
@@ -86,6 +85,7 @@ header {
     background-color: rgba(0, 0, 0, 0.7);
     display: none;
     opacity: 0;
+    top: 0;
   }
   &__wrap {
     position: absolute;
@@ -147,11 +147,12 @@ header {
   }
 }
 .navMenu__main__active {
-  overflow: hidden;
-  height: 100%;
-  position: fixed;
-  z-index: 999;
+  overflow-y: hidden;
 }
 .mob__menu__active {
   display: block;
+}
+.fixed-top {
+  position: sticky;
+  top: 0;
 }
