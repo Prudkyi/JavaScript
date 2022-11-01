@@ -43,6 +43,19 @@ navMob__close.addEventListener("click", closeNavMob);
 navMob__wallpaper.addEventListener("click", closeNavMob);
 
 
+/******************************/
+const inputSearch = document.querySelector(".header__search__input");
+function formSearch_placeholder_focus () {
+    document.querySelector(".header__search__placeholder").classList.add("header__search__placeholder-active");
+}
+function formSearch_placeholder_not_focus () {
+    if (inputSearch.value.length < 1) document.querySelector(".header__search__placeholder").classList.remove("header__search__placeholder-active");
+}
+
+inputSearch.addEventListener("focus", formSearch_placeholder_focus);
+inputSearch.addEventListener("blur", formSearch_placeholder_not_focus);
+
+
 
 
 

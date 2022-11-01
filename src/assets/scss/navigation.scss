@@ -3,20 +3,28 @@
 
 header {
   background-color: $color-bg-main;
-  color: $color-font-main;
   box-shadow: $shadow-md;
-  z-index: 9998;
 }
 .header {
   max-width: $size-main;
   margin: 0 auto;
   color: $color-bg-thue;
   padding: 0 $size-main-padding-lr;
+  z-index: 9999;
+  position: relative;
+  background-color: $color-bg-main;
+  &__mask {
+    width: 100%;
+    height: 1px;
+    box-shadow: $shadow-md;
+    background-color: $color-bg-main;
+    position: relative;
+    z-index: 9999;
+  }
   &__wrap {
     display: flex;
     justify-content: space-between;
   }
-
   &__logo {
     height: $size-height-menu;
     display: flex;
@@ -27,31 +35,32 @@ header {
       height: 80%;
     }
   }
-
   &__nav {
     @include _sm {
       display: none;
     }
-
     nav {
       ul {
         display: flex;
         align-items: center;
         height: $size-height-menu;
-
-        li {
+        &> li {
           margin: 0 10px;
-
+          position: relative;
           a {
-            font-size: 17px;
-            font-weight: 600;
+            font-size: $size-menu;
             color: $color-bg-thue;
+          }
+          i {
+            position: relative;
+            top: 2px;
+            font-size: $size-menu-icon;
+            cursor: pointer;
           }
         }
       }
     }
   }
-
   &__mobicon {
     display: none;
     justify-content: center;
@@ -63,6 +72,49 @@ header {
     i {
       cursor: pointer;
       font-size: 34px;
+    }
+  }
+  &__search {
+    width: 100%;
+    position: absolute;
+    top: $size-height-menu;
+    z-index: 9998;
+    &__wrap {
+      max-width: $size-main;
+      height: $size-height-menu;
+      margin: 0 auto;
+      background-color: $color-bg-thue;
+      display: flex;
+      align-items: center;
+      box-shadow: $shadow-md;
+      padding: 0 $size-main-padding-lr;
+      border-radius: 0 0 25px 25px;
+      position: relative;
+      input {
+        width: 100%;
+        height: $size-height-menu / 1.8;
+        background-color: $color-bg-thue;
+        border: 1px solid #D1D5DB;
+        padding: 0 15px;
+        font-size: 17px;
+      }
+      button {
+        background-color: #D1D5DB;
+        height: $size-height-menu / 1.9;
+        padding: 0 $size-main-padding-lr;
+      }
+    }
+    &__placeholder {
+      position: absolute;
+      left: $size-main-padding-lr + 15;
+      top: 30px;
+      font-size: 15px;
+      transition: all 400ms;
+      &-active {
+        font-size: 10px;
+        top: 19px;
+        color: #4d5154;
+      }
     }
   }
 }
