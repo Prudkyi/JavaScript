@@ -4,6 +4,8 @@
 header {
   background-color: $color-bg-main;
   box-shadow: $shadow-md;
+  position: relative;
+  z-index: 9997;
 }
 .header {
   max-width: $size-main;
@@ -56,9 +58,14 @@ header {
             top: 2px;
             font-size: $size-menu-icon;
             cursor: pointer;
+            outline: none;
+            user-select: none;
           }
         }
       }
+    }
+    .btn-search-active {
+      color: yellow;
     }
   }
   &__mobicon {
@@ -77,8 +84,12 @@ header {
   &__search {
     width: 100%;
     position: absolute;
-    top: $size-height-menu;
-    z-index: 9998;
+    z-index: 9990;
+    top: 0;
+    transition: 400ms;
+    &-active {
+      top: $size-height-menu;
+    }
     &__wrap {
       max-width: $size-main;
       height: $size-height-menu;
@@ -86,10 +97,10 @@ header {
       background-color: $color-bg-thue;
       display: flex;
       align-items: center;
-      box-shadow: $shadow-md;
       padding: 0 $size-main-padding-lr;
       border-radius: 0 0 25px 25px;
       position: relative;
+      transition: all 400ms;
       input {
         width: 100%;
         height: $size-height-menu / 1.8;
@@ -97,11 +108,17 @@ header {
         border: 1px solid #D1D5DB;
         padding: 0 15px;
         font-size: 17px;
+        border-radius: 5px 0 0 5px;
       }
       button {
-        background-color: #D1D5DB;
-        height: $size-height-menu / 1.9;
+        background-color: $color-bg-main;
+        color: $color-bg-thue;
+        height: $size-height-menu / 1.8;
         padding: 0 $size-main-padding-lr;
+        border-radius: 0 5px 5px 0;
+      }
+      &-active {
+        box-shadow: $shadow-md;
       }
     }
     &__placeholder {

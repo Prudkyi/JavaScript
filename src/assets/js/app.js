@@ -5,7 +5,6 @@ prdkFunctions.isWebP();
 
 /* go Work */
 
-
 /* mob Menu */
 let stateOpenMobMenu = false;
 
@@ -44,36 +43,33 @@ navMob__wallpaper.addEventListener("click", closeNavMob);
 
 
 /******************************/
-const inputSearch = document.querySelector(".header__search__input");
+const inputSearch = document.querySelector(".header__search__input"),
+      searchBlock = document.querySelector(".header__search"),
+      btnSearch = document.querySelector(".btn-search"),
+      header__search__wrap = document.querySelector(".header__search__wrap");
+
 function formSearch_placeholder_focus () {
     document.querySelector(".header__search__placeholder").classList.add("header__search__placeholder-active");
 }
 function formSearch_placeholder_not_focus () {
     if (inputSearch.value.length < 1) document.querySelector(".header__search__placeholder").classList.remove("header__search__placeholder-active");
 }
+function formSearch_btn () {
+    searchBlock.classList.toggle("header__search-active");
+    header__search__wrap.classList.toggle("header__search__wrap-active");
+    btnSearch.classList.toggle("btn-search-active");
+}
 
 inputSearch.addEventListener("focus", formSearch_placeholder_focus);
 inputSearch.addEventListener("blur", formSearch_placeholder_not_focus);
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+btnSearch.addEventListener("click", formSearch_btn);
+document.addEventListener( 'click', (e) => {
+    const searchBlockElement = e.composedPath().includes(searchBlock);
+    if ( ! searchBlockElement && e.target.classList[1] !== "btn-search" ) {
+        if (!btnSearch.classList.contains("btn-search-active")) return;
+        formSearch_btn ();
+    }
+})
+document.addEventListener('keydown', function(e) {
+    if( e.keyCode == 27 ) formSearch_btn ();
+});
