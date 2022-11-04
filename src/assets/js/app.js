@@ -17,44 +17,43 @@ const btnOpen = document.querySelector(".header__mobicon i"),
     speedOpenMobNav = 400;
 
 
-function openNavMob (element) {
+function openNavMob(element) {
     navMob.classList.add("navMob-active");
     navMob__wrap.classList.add("navMenu__active__wrap");
     navMob__wallpaper.classList.add("navMob__wallpaper__active");
     document.body.classList.add("navMenu__main__active");
     stateOpenMobMenu = true;
 }
-
-function closeNavMob (element) {
+function closeNavMob(element) {
     navMob__wrap.classList.remove("navMenu__active__wrap");
     navMob__wallpaper.classList.remove("navMob__wallpaper__active");
     document.body.classList.remove("navMenu__main__active");
-    setTimeout(function (){navMob.classList.remove("navMob-active")}, speedOpenMobNav);
+    setTimeout(function () {
+        navMob.classList.remove("navMob-active");
+    }, speedOpenMobNav);
     stateOpenMobMenu = false;
 }
 
-btnOpen.addEventListener("click", function (){
+btnOpen.addEventListener("click", function () {
     if (!stateOpenMobMenu) openNavMob();
     else closeNavMob();
 });
-
 navMob__close.addEventListener("click", closeNavMob);
 navMob__wallpaper.addEventListener("click", closeNavMob);
 
-
-/******************************/
+/************* Block Search  *****************/
 const inputSearch = document.querySelector(".header__search__input"),
-      searchBlock = document.querySelector(".header__search"),
-      btnSearch = document.querySelector(".btn-search"),
-      header__search__wrap = document.querySelector(".header__search__wrap");
+    searchBlock = document.querySelector(".header__search"),
+    btnSearch = document.querySelector(".btn-search"),
+    header__search__wrap = document.querySelector(".header__search__wrap");
 
-function formSearch_placeholder_focus () {
+function formSearch_placeholder_focus() {
     document.querySelector(".header__search__placeholder").classList.add("header__search__placeholder-active");
 }
-function formSearch_placeholder_not_focus () {
+function formSearch_placeholder_not_focus() {
     if (inputSearch.value.length < 1) document.querySelector(".header__search__placeholder").classList.remove("header__search__placeholder-active");
 }
-function formSearch_btn () {
+function formSearch_btn() {
     searchBlock.classList.toggle("header__search-active");
     header__search__wrap.classList.toggle("header__search__wrap-active");
     btnSearch.classList.toggle("btn-search-active");
@@ -63,13 +62,29 @@ function formSearch_btn () {
 inputSearch.addEventListener("focus", formSearch_placeholder_focus);
 inputSearch.addEventListener("blur", formSearch_placeholder_not_focus);
 btnSearch.addEventListener("click", formSearch_btn);
-document.addEventListener( 'click', (e) => {
+document.addEventListener('click', (e) => {
     const searchBlockElement = e.composedPath().includes(searchBlock);
-    if ( ! searchBlockElement && e.target.classList[1] !== "btn-search" ) {
+    if (!searchBlockElement && e.target.classList[1] !== "btn-search") {
         if (!btnSearch.classList.contains("btn-search-active")) return;
-        formSearch_btn ();
+        formSearch_btn();
     }
-})
-document.addEventListener('keydown', function(e) {
-    if( e.keyCode == 27 ) formSearch_btn ();
 });
+document.addEventListener('keydown', function (e) {
+    if (e.keyCode == 27) formSearch_btn();
+});
+
+
+/* lesson */
+
+const myError = () => {
+    throw new Error("some Error");
+}
+
+try {
+    myError();
+} catch (error) {
+    console.error(error);
+    console.log(error.message);
+}
+
+console.log('go...')
