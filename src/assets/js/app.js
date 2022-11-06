@@ -76,15 +76,27 @@ document.addEventListener('keydown', function (e) {
 
 /* lesson */
 
-const myError = () => {
-    throw new Error("some Error");
+const myObj = {
+    name: "Serhii",
+    age: 35,
+    position: "Web Developer"
 }
 
-try {
-    myError();
-} catch (error) {
-    console.error(error);
-    console.log(error.message);
-}
+myObj.age = 34;
 
-console.log('go...')
+const { name, age } = myObj;
+console.log(name);
+console.log(age)
+
+const myArray = [1, 2, 3];
+const [one, twu] = myArray;
+console.log(one);
+console.log(twu)
+
+const myFn = ({name, age}) => {
+    if (age) {
+        return `${name} have ${age} year`;
+    }
+    return  `I don't know how old ${name} is`;
+}
+console.log(myFn(myObj))
