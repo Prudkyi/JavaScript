@@ -85,13 +85,9 @@ const myObj = {
 myObj.age = 34;
 
 const { name, age } = myObj;
-console.log(name);
-console.log(age)
 
 const myArray = [1, 2, 3];
 const [one, twu] = myArray;
-console.log(one);
-console.log(twu)
 
 const myFn = ({name, age}) => {
     if (age) {
@@ -99,4 +95,10 @@ const myFn = ({name, age}) => {
     }
     return  `I don't know how old ${name} is`;
 }
-console.log(myFn(myObj))
+
+const newArray = myArray.map(element => {
+    return element * 3;
+})
+
+console.log(myArray);
+console.log(newArray);
