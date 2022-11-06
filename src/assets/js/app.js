@@ -103,8 +103,15 @@ const newArray = myArray.map(element => {
 const a = 5;
 const b = 10;
 
+function OK () {
+    console.log("ok")
+}
+function  NOT () {
+    console.log("not")
+}
+
 const test = (a < b && a === 5)
-? console.log("OK")
-    : console.log("NOT");
+? OK()
+    : NOT();
 
 console.log(test)
