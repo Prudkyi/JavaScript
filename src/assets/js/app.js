@@ -100,5 +100,11 @@ const newArray = myArray.map(element => {
     return element * 3;
 })
 
-console.log(myArray);
-console.log(newArray);
+const a = 5;
+const b = 10;
+
+const test = (a < b && a === 5)
+? console.log("OK")
+    : console.log("NOT");
+
+console.log(test)
