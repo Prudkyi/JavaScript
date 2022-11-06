@@ -111,7 +111,7 @@ function  NOT () {
 }
 
 const test = (a < b && a === 5)
-? OK()
-    : NOT();
+? a
+    : b;
 
 console.log(test)
