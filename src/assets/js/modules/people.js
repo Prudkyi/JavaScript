@@ -1,14 +1,14 @@
-class People {
+class MoreArray extends Array {
 
-    constructor(fabrik) {
-        this.fabirk = fabrik
-        this.mouth = 0
-    }
-
-    plusMouth () {
-        this.mouth++;
+    checkAlike() {
+        this.reduce(
+            (acc, element) => {
+                if (acc === element) console.log(false)
+                return element
+            }
+        );
     }
 
 }
 
-export default People;
+export default MoreArray;

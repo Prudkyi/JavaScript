@@ -1,15 +1,24 @@
 import * as prdkFunctions from "./modules/functions.js";
-import People from "./modules/people.js";
+import MoreArray from "./modules/people.js";
 
 /* Start */
 prdkFunctions.isWebP();
 
 /* lesson */
 
-const people1 = new People("Ricor");
+const myArr = new MoreArray(1,2,3,3,4);
 
-people1.plusMouth();
-people1.plusMouth();
+var initialValue = 0;
+var sum = [1,2,3].reduce(
+    (accumulator, currentValue) => {
+        console.log(`${accumulator} ${currentValue}`)
+        return accumulator + currentValue
+    },
+    initialValue
+);
+console.log(sum)
 
-console.log(people1);
+console.log(' ')
+
+myArr.checkAlike()
 
