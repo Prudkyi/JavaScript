@@ -2,6 +2,7 @@ class Form {
 
     constructor (classForm, name, email, phone, text) {
 
+        /* Elements */
         this.form = document.querySelector(`.contactForm`);
         this.name = document.querySelector(`.contactForm [name=${name}]`);
         this.email = document.querySelector(`.contactForm [name=${email}]`);
@@ -9,6 +10,10 @@ class Form {
         this.text = document.querySelector(`.contactForm [name=${text}]`);
         this.submit = document.querySelector(`.contactForm [name=submit]`);
 
+        /* Class List */
+        this.classError = "contactForm__input-error";
+
+        /* Event Listener */
         this.form.addEventListener('submit', this.formSubmit.bind(this));
 
     }
@@ -17,10 +22,15 @@ class Form {
         return this.phone.value.length >= 12;
     }
 
+    addClassError (el) {
+        el.classList.add(this.classError);
+    }
+
     formSubmit (el) {
-        console.log(this.checkPhone(el))
+        if (!this.checkPhone(el)) {
+            this.addClassError(this.phone);
+        }
         el.preventDefault();
-        console.log('not')
     }
 
 }

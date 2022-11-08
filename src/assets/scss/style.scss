@@ -22,3 +22,14 @@ body {
     margin-top: 20px;
   }
 }
+
+.contactForm {
+  &__input {
+    border: 1px solid #4d5154;
+    border-radius: 5px;
+    padding: 8px 12px;
+    &-error {
+      border-color: red;
+    }
+  }
+}
