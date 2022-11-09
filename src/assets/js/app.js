@@ -5,7 +5,7 @@ new Form("contactForm", "nameUser", "emailUser", "phoneUser");
 
 const url = "https://jsonplaceholder.typicode.com/users";
 
-
+const TEST = "test";
 
 getData(url)
     .then(data => console.log(data))
