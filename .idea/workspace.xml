@@ -1,9 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="e9340680-260c-4cbf-a45c-f8a106234acc" name="Default Changelist" comment="Вчу прокрутку">
+    <list default="true" id="e9340680-260c-4cbf-a45c-f8a106234acc" name="Default Changelist" comment="Fetch">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/assets/js/app.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/assets/js/app.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/gulp/version.json" beforeDir="false" afterPath="$PROJECT_DIR$/gulp/version.json" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -41,6 +41,7 @@
     <property name="js.buildTools.gulp.gulp_package_dir" value="$PROJECT_DIR$/node_modules/gulp" />
     <property name="last_opened_file_path" value="$PROJECT_DIR$" />
     <property name="nodejs_package_manager_path" value="npm" />
+    <property name="settings.editor.selected.configurable" value="editor.preferences.jsOptions" />
     <property name="vue.rearranger.settings.migration" value="true" />
   </component>
   <component name="RunManager" selected="npm.dev">
@@ -76,8 +77,8 @@
     </configuration>
     <recent_temporary>
       <list>
-        <item itemvalue="npm.dev" />
         <item itemvalue="Gulp.js.dev" />
+        <item itemvalue="npm.dev" />
       </list>
     </recent_temporary>
   </component>
@@ -96,6 +97,19 @@
       <workItem from="1666620432827" duration="1429000" />
       <workItem from="1666686424524" duration="4116000" />
       <workItem from="1666703247489" duration="3232000" />
+      <workItem from="1666816956528" duration="2317000" />
+      <workItem from="1667063211377" duration="13000" />
+      <workItem from="1667153612101" duration="12564000" />
+      <workItem from="1667238413643" duration="2042000" />
+      <workItem from="1667295899053" duration="12083000" />
+      <workItem from="1667484992670" duration="975000" />
+      <workItem from="1667582997575" duration="4168000" />
+      <workItem from="1667738175848" duration="2761000" />
+      <workItem from="1667828340440" duration="2573000" />
+      <workItem from="1667832516226" duration="6586000" />
+      <workItem from="1667915022144" duration="6203000" />
+      <workItem from="1667936023709" duration="3144000" />
+      <workItem from="1667969976507" duration="6440000" />
     </task>
     <task id="LOCAL-00001" summary="Зупинився на замиканнях, функціях. Далі масиви">
       <created>1665584672787</created>
@@ -146,7 +160,126 @@
       <option name="project" value="LOCAL" />
       <updated>1666789741884</updated>
     </task>
-    <option name="localTasksCounter" value="8" />
+    <task id="LOCAL-00008" summary="Ок. Йдемо далі">
+      <created>1666811799571</created>
+      <option name="number" value="00008" />
+      <option name="presentableId" value="LOCAL-00008" />
+      <option name="project" value="LOCAL" />
+      <updated>1666811799571</updated>
+    </task>
+    <task id="LOCAL-00009" summary="Ок. Йдемо далі">
+      <created>1666817856186</created>
+      <option name="number" value="00009" />
+      <option name="presentableId" value="LOCAL-00009" />
+      <option name="project" value="LOCAL" />
+      <updated>1666817856186</updated>
+    </task>
+    <task id="LOCAL-00010" summary="Ок. Зробив шапку">
+      <created>1667166509634</created>
+      <option name="number" value="00010" />
+      <option name="presentableId" value="LOCAL-00010" />
+      <option name="project" value="LOCAL" />
+      <updated>1667166509634</updated>
+    </task>
+    <task id="LOCAL-00011" summary="Ок. Зробив шапку + lesson JS">
+      <created>1667318672735</created>
+      <option name="number" value="00011" />
+      <option name="presentableId" value="LOCAL-00011" />
+      <option name="project" value="LOCAL" />
+      <updated>1667318672735</updated>
+    </task>
+    <task id="LOCAL-00012" summary="Ок. Зробив пошук">
+      <created>1667325546873</created>
+      <option name="number" value="00012" />
+      <option name="presentableId" value="LOCAL-00012" />
+      <option name="project" value="LOCAL" />
+      <updated>1667325546873</updated>
+    </task>
+    <task id="LOCAL-00013" summary="JS GOOO!!!">
+      <created>1667589911457</created>
+      <option name="number" value="00013" />
+      <option name="presentableId" value="LOCAL-00013" />
+      <option name="project" value="LOCAL" />
+      <updated>1667589911457</updated>
+    </task>
+    <task id="LOCAL-00014" summary="JS GOOO!!!">
+      <created>1667738835861</created>
+      <option name="number" value="00014" />
+      <option name="presentableId" value="LOCAL-00014" />
+      <option name="project" value="LOCAL" />
+      <updated>1667738835861</updated>
+    </task>
+    <task id="LOCAL-00015" summary="JS GOOO!!!">
+      <created>1667739020094</created>
+      <option name="number" value="00015" />
+      <option name="presentableId" value="LOCAL-00015" />
+      <option name="project" value="LOCAL" />
+      <updated>1667739020094</updated>
+    </task>
+    <task id="LOCAL-00016" summary="JS GOOO!!!">
+      <created>1667740245010</created>
+      <option name="number" value="00016" />
+      <option name="presentableId" value="LOCAL-00016" />
+      <option name="project" value="LOCAL" />
+      <updated>1667740245010</updated>
+    </task>
+    <task id="LOCAL-00017" summary="JS GOOO!!!">
+      <created>1667740365247</created>
+      <option name="number" value="00017" />
+      <option name="presentableId" value="LOCAL-00017" />
+      <option name="project" value="LOCAL" />
+      <updated>1667740365247</updated>
+    </task>
+    <task id="LOCAL-00018" summary="JS GOOO!!!">
+      <created>1667764649575</created>
+      <option name="number" value="00018" />
+      <option name="presentableId" value="LOCAL-00018" />
+      <option name="project" value="LOCAL" />
+      <updated>1667764649575</updated>
+    </task>
+    <task id="LOCAL-00019" summary="Next">
+      <created>1667832797062</created>
+      <option name="number" value="00019" />
+      <option name="presentableId" value="LOCAL-00019" />
+      <option name="project" value="LOCAL" />
+      <updated>1667832797062</updated>
+    </task>
+    <task id="LOCAL-00020" summary="Next">
+      <created>1667853096557</created>
+      <option name="number" value="00020" />
+      <option name="presentableId" value="LOCAL-00020" />
+      <option name="project" value="LOCAL" />
+      <updated>1667853096557</updated>
+    </task>
+    <task id="LOCAL-00021" summary="Next">
+      <created>1667917411021</created>
+      <option name="number" value="00021" />
+      <option name="presentableId" value="LOCAL-00021" />
+      <option name="project" value="LOCAL" />
+      <updated>1667917411021</updated>
+    </task>
+    <task id="LOCAL-00022" summary="Fetch">
+      <created>1667933666936</created>
+      <option name="number" value="00022" />
+      <option name="presentableId" value="LOCAL-00022" />
+      <option name="project" value="LOCAL" />
+      <updated>1667933666936</updated>
+    </task>
+    <task id="LOCAL-00023" summary="Fetch">
+      <created>1667939175991</created>
+      <option name="number" value="00023" />
+      <option name="presentableId" value="LOCAL-00023" />
+      <option name="project" value="LOCAL" />
+      <updated>1667939175991</updated>
+    </task>
+    <task id="LOCAL-00024" summary="Fetch">
+      <created>1667977489246</created>
+      <option name="number" value="00024" />
+      <option name="presentableId" value="LOCAL-00024" />
+      <option name="project" value="LOCAL" />
+      <updated>1667977489246</updated>
+    </task>
+    <option name="localTasksCounter" value="25" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -169,6 +302,17 @@
     <MESSAGE value="Зупинився на обьктах" />
     <MESSAGE value="Вчу DOM" />
     <MESSAGE value="Вчу прокрутку" />
-    <option name="LAST_COMMIT_MESSAGE" value="Вчу прокрутку" />
+    <MESSAGE value="Ок. Йдемо далі" />
+    <MESSAGE value="Ок. Зробив шапку" />
+    <MESSAGE value="Ок. Зробив шапку + lesson JS" />
+    <MESSAGE value="Ок. Зробив пошук" />
+    <MESSAGE value="JS GOOO!!!" />
+    <MESSAGE value="Next" />
+    <MESSAGE value="Fetch" />
+    <option name="LAST_COMMIT_MESSAGE" value="Fetch" />
+  </component>
+  <component name="XSLT-Support.FileAssociations.UIState">
+    <expand />
+    <select />
   </component>
 </project>
