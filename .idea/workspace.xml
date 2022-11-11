@@ -3,7 +3,9 @@
   <component name="ChangeListManager">
     <list default="true" id="e9340680-260c-4cbf-a45c-f8a106234acc" name="Default Changelist" comment="Fetch">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/gulp/version.json" beforeDir="false" afterPath="$PROJECT_DIR$/gulp/version.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/assets/js/app.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/assets/js/app.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/assets/scss/style.scss" beforeDir="false" afterPath="$PROJECT_DIR$/src/assets/scss/style.scss" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/src/index.html" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -39,9 +41,9 @@
     <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="js.buildTools.gulp.gulp_package_dir" value="$PROJECT_DIR$/node_modules/gulp" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/../tailwind" />
     <property name="nodejs_package_manager_path" value="npm" />
-    <property name="settings.editor.selected.configurable" value="editor.preferences.jsOptions" />
+    <property name="settings.editor.selected.configurable" value="reference.settingsdialog.IDE.editor.colors.Color Scheme Font" />
     <property name="vue.rearranger.settings.migration" value="true" />
   </component>
   <component name="RunManager" selected="npm.dev">
@@ -110,6 +112,12 @@
       <workItem from="1667915022144" duration="6203000" />
       <workItem from="1667936023709" duration="3144000" />
       <workItem from="1667969976507" duration="6440000" />
+      <workItem from="1668023321544" duration="834000" />
+      <workItem from="1668059242586" duration="2206000" />
+      <workItem from="1668109967006" duration="277000" />
+      <workItem from="1668112425060" duration="2725000" />
+      <workItem from="1668182769239" duration="63000" />
+      <workItem from="1668191531302" duration="53000" />
     </task>
     <task id="LOCAL-00001" summary="Зупинився на замиканнях, функціях. Далі масиви">
       <created>1665584672787</created>
@@ -279,7 +287,21 @@
       <option name="project" value="LOCAL" />
       <updated>1667977489246</updated>
     </task>
-    <option name="localTasksCounter" value="25" />
+    <task id="LOCAL-00025" summary="Fetch">
+      <created>1668023384801</created>
+      <option name="number" value="00025" />
+      <option name="presentableId" value="LOCAL-00025" />
+      <option name="project" value="LOCAL" />
+      <updated>1668023384801</updated>
+    </task>
+    <task id="LOCAL-00026" summary="Fetch">
+      <created>1668059553644</created>
+      <option name="number" value="00026" />
+      <option name="presentableId" value="LOCAL-00026" />
+      <option name="project" value="LOCAL" />
+      <updated>1668059553644</updated>
+    </task>
+    <option name="localTasksCounter" value="27" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">

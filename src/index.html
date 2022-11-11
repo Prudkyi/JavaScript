@@ -1,28 +1,29 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    @@include('html/head.html',{
-    "title":"Lessons JS"
-    })
+	@@include('html/head.html',{
+	"title":"Lessons JS"
+	})
 </head>
 <body>
 @@include('html/header.html',{})
 <div id="main">
 
-    <form action="#" method="get" class="contactForm">
-        <label>
-            <input type="text" name="nameUser" placeholder="Your Name" />
-        </label>
-        <label>
-            <input type="tel" class="contactForm__input" name="phoneUser" value="+48" placeholder="Your Phone" />
-        </label>
-        <button type="submit" name="submit">Send</button>
-    </form>
+	<form action="#" method="get" class="contactForm">
+		<label>
+			<input type="text" name="nameUser" placeholder="Your Name"/>
+		</label>
+		<label>
+			<input type="tel" class="contactForm__input" name="phoneUser" value="+48" placeholder="Your Phone"/>
+		</label>
+		<button type="submit" name="submit">Send</button>
+	</form>
+
 
 </div>
 <footer>
-    @@include('html/footer.html',{})
-    @@include('html/modal.html',{})
+	@@include('html/footer.html',{})
+	@@include('html/modal.html',{})
 </footer>
 @@include('html/scripts.html',{})
 
